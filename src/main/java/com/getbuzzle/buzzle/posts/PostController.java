@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 @RestController("/posts")
 public class PostController {
-    private List<Post> posts = new ArrayList<>();
+    private final List<Post> posts = new ArrayList<>();
 
     private PostController() {
         this.posts.add(new Post(1, "Content 1", "https://www.imageurl.com"));
